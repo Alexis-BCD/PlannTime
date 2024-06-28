@@ -32,3 +32,34 @@ footer {
     background: #333;
     color: #fff;
 }
+
+form label, form input, form textarea, form button {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
