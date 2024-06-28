@@ -12,29 +12,28 @@
         <p>Gestion d'emploi du temps d'une personne</p>
     </header>
     <main>
-        <section id="features">
-            <h2>Fonctionnalités</h2>
-            <ul>
-                <li>Création et gestion des événements</li>
-                <li>Rappels</li>
-                <li>Intégration avec d'autres calendriers</li>
-            </ul>
+        <section id="create-event">
+            <h2>Créer un événement</h2>
+            <form id="event-form">
+                <label for="event-title">Titre de l'événement:</label>
+                <input type="text" id="event-title" required>
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" required>
+                <label for="event-time">Heure:</label>
+                <input type="time" id="event-time" required>
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" required></textarea>
+                <button type="submit">Ajouter l'événement</button>
+            </form>
         </section>
-        <section id="pricing">
-            <h2>Tarification</h2>
-            <p>Gratuit pour un usage personnel.</p>
-        </section>
-        <section id="about">
-            <h2>À propos</h2>
-            <p>PlannTime est votre solution pour une gestion efficace de votre emploi du temps.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Pour toute question, veuillez nous contacter à l'adresse email suivante : contact@planntime.com</p>
+        <section id="events-list">
+            <h2>Liste des événements</h2>
+            <ul id="events"></ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 PlannTime. Tous droits réservés.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
